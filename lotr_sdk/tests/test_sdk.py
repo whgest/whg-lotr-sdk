@@ -1,11 +1,9 @@
 import os
-os.environ["LOTR_API_KEY"] = "1"
+if not os.environ.get("LOTR_API_KEY"):
+    os.environ["LOTR_API_KEY"] = "1"
 
 from lotr_sdk.sdk import LotrSdk
 from .mock_data import *
-
-def mock_get(*args, **kwargs):
-    return kwargs["mock_data"]
 
 
 def test_get_all_movies(monkeypatch):
