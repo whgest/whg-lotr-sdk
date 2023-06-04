@@ -9,9 +9,8 @@ whg-lotr-sdk is installable from pip.
 
 ```pip install whg-lotr-sdk```
 
-Or, grab the source code at https://github.com/whgest/whg-lotr-sdk.
-
-To install dependencies, run ```pip install -r requirements.txt``` at the command line in the sdk directory.
+Or, grab the source code at https://github.com/whgest/whg-lotr-sdk. To install dependencies, 
+run ```pip install -r requirements.txt``` at the command line in the sdk directory.
 
 ### Test
 

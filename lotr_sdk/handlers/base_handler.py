@@ -40,7 +40,6 @@ class BaseRequestHandler:
     def _get(self, url, params=None):
         headers = {'Authorization': f"Bearer {API_KEY}"}
         response = self._call(f"{API_BASE_URL}/{url}", headers=headers, params=params)
-        print("AJAX GET")
         if 200 <= response.status_code < 300:
             response_json = json.loads(response.text)
             print(response_json)
