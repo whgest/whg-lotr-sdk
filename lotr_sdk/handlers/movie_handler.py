@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from typing import List
-from handlers.base_handler import BaseRequestHandler, BaseResponse
+from lotr_sdk.handlers.base_handler import BaseRequestHandler, BaseResponse
 
 
 @dataclass

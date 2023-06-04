@@ -15,7 +15,8 @@ To install dependencies, run ```pip install -r requirements.txt``` at the comman
 
 ### Test
 
-To verify setup was successful, enter ```pytest``` at the command line in your sdk directory to run unit tests.
+To verify setup was successful, enter ```pytest``` at the command line in your sdk directory to run unit tests if you cloned
+the source code, or ```pytest --pyargs lotr_sdk.tests``` if you installed the package from pip.
 
 
 ### Basic Usage
@@ -26,7 +27,7 @@ as the key ```LOTR_API_KEY```.
 Once your key is set, import and instantiate the SDK handler as shown below.
 
 ```
-from lotr_sdk import LotrSdk
+from lotr_sdk.sdk import LotrSdk 
 
 sdk = LotrSdk()
 

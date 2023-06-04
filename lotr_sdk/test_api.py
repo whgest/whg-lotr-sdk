@@ -1,4 +1,4 @@
-from lotr_sdk import LotrSdk
+from lotr_sdk.sdk import LotrSdk
 from pprint import pprint
 
 sdk = LotrSdk()
